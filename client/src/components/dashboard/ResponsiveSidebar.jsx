@@ -30,7 +30,7 @@ const ResponsiveSideNavbar = ({
           className="w-[18rem] h-full py-2   xl:hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
         >
           <div className="flex justify-center items-center py-3 text-3xl border-b-[1px] border-b-gray-300 ">
-            DubaiRentals
+            AnyRentals
           </div>
           <div className="mx-2 mt-6 xl:hidden">
             <p
