@@ -12,7 +12,7 @@ const Dashboard = () => {
       </div>
       <div className="grid grid-col-1 lg:grid-cols-12 ">
         <SideNavbar />
-        <div className="w-full  bg-gray-100 lg:col-span-10">
+        <div className="w-full  bg-gray-100 lg:col-span-10 ">
           <Outlet />
         </div>
       </div>

@@ -32,7 +32,7 @@ const Enquiries = () => {
     return <Loader />;
   }
   return (
-    <div className="mb-10">
+    <div className="mb-10 min-h-[20rem] max-h-auto">
       <div role="presentation" className="w-[90%] lg:w-[90%] m-auto mt-6 ">
         <Breadcrumbs aria-label="breadcrumb">
           <p color="inherit" href="/">

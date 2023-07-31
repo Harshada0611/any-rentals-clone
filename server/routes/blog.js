@@ -60,4 +60,19 @@ router.get("/all-blogs", async (req, resp) => {
   }
 });
 
+//individual blog
+router.get("/find-blog/:id", async (req, resp) => {
+  try {
+    let blog = await Blog.findOne({ _id: req.params.id });
+    if (blog) {
+      console.log(blog);
+      resp.json({ success: true, blog: blog });
+    } else {
+      resp.json({ success: false, message: "no data found" });
+    }
+  } catch (err) {
+    console.log("err in finding blog server", err);
+  }
+});
+
 module.exports = router;

@@ -16,7 +16,7 @@ const SideNavbar = () => {
   return (
     <div className=" col-span-2 border-2 hidden lg:block pb-10">
       <div className="flex flex-col justify-center py-4 border-b-2">
-        <h1 className="text-3xl text-center">AnyRentals</h1>
+        <h1 className="text-3xl text-center">DubaiRentals</h1>
         <div className="text-gray-600 flex  justify-center items-center mt-4 ">
           <p className="">
             <BiSolidUser />

@@ -11,6 +11,7 @@ import Account from "./pages/Account";
 import ReadBlogs from "./pages/ReadBlogs";
 import CategoryServiceList from "./pages/CategorySevicesList";
 import ViewServiceDetails from "./pages/ViewServiceDetails";
+import BlogPage from "./pages/BlogPage";
 
 // dashboard
 import Dashboard from "./layout/Dashboard";
@@ -49,6 +50,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/read-blog" element={<ReadBlogs />}></Route>
+          <Route path="/blog-page/:blogId" element={<BlogPage />}></Route>
 
           <Route
             path="/category-details/:categoryId/:categoryName"

@@ -6,7 +6,7 @@ const Blog = () => {
   const [blogForm, setBlogForm] = useState(false);
 
   return (
-    <div className=" mb-7">
+    <div className=" mb-7 min-h-[20rem] max-h-auto ">
       {blogForm ? (
         <BlogForm setBlogForm={setBlogForm} />
       ) : (
