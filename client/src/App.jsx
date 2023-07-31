@@ -42,7 +42,6 @@ function App() {
   return (
     <>
       <Toaster position="top-center" reverseOrder={false} />
-
       <Routes>
         <Route element={<Main />}>
           <Route path="/account" element={<Account />} />
@@ -67,7 +66,6 @@ function App() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/add-service" element={<AddService />}></Route>
           <Route path="/listings" element={<Listings />}></Route>
-
           <Route path="/enquiries" element={<Enquiries />}></Route>
         </Route>
       </Routes>
