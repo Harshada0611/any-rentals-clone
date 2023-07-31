@@ -48,7 +48,7 @@ const ReadBlogs = () => {
         </div>
         <div className=" col-span-2">
           <section className="grid grid-cols-1 grid-rows-2  w-full h-full">
-            {allBlogs.slice(1, 3).map((blog, i) => {
+            {allBlogs.slice(4, 6).map((blog, i) => {
               return (
                 <div
                   className="border-2 h-full w-full relative"

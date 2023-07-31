@@ -89,7 +89,7 @@ const Navbar = ({ auth, setAuth }) => {
       transition-all duration-300 ease-in-out `}
     >
       <div className="col-span-4 sm:col-span-5 flex items-center text-2xl  sm:text-3xl pl-10 sm:pl-20 xl:pl-[10rem]  cursor-pointer">
-        AnyRentals
+        DubaiRentals
       </div>
       <div className="col-span-1 sm:col-span-6  ">
         <div className="h-full flex justify-start md:justify-end items-center xl:hidden pt-1">

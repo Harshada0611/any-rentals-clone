@@ -17,11 +17,12 @@ const BlogPage = () => {
     }
   };
   useEffect(() => {
+    window.scrollTo(0, 0);
     getData();
   }, []);
 
   if (!blogData) {
-    <Loader />;
+    return <Loader />;
   }
 
   return (
