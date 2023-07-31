@@ -31,8 +31,8 @@ const Login = ({ setLogin }) => {
       if (response.data.success) {
         console.log(response.data);
         localStorage.setItem("token", response.data.token);
-        // localStorage.setItem("accountType", response.data.account.accountType);
-        // localStorage.setItem("accountName", response.data.account.name);
+        localStorage.setItem("accountType", response.data.account.accountType);
+        localStorage.setItem("accountName", response.data.account.name);
 
         navigate("/listings");
         toast.success("LoggedIn successfully");

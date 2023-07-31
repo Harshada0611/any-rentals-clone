@@ -74,7 +74,7 @@ const CategoryServiceList = () => {
         </div>
       </div>
 
-      {/* <div className="w-[90%] m-auto grid sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="w-[90%] m-auto grid sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {list
           .filter((service) => {
             if (service.serviceType === categoryName) {
@@ -84,7 +84,7 @@ const CategoryServiceList = () => {
           .map((service, i) => {
             return <ServiceCard key={i + 1} service={service} />;
           })}
-      </div> */}
+      </div>
     </div>
   );
 };

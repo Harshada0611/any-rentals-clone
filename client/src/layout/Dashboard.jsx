@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+
 import SideNavbar from "../components/dashboard/SideNavbar";
 import TopNavbar from "../components/dashboard/TopNavbar";
 import Footer from "../components/Footer";

@@ -15,7 +15,7 @@ const ResponsiveSideNavbar = ({
   toggleDrawer,
 }) => {
   const navigate = useNavigate();
-  // const accountType = localStorage.getItem("accountType");
+  const accountType = localStorage.getItem("accountType");
 
   return (
     <div className="w-1/4  ">
@@ -30,12 +30,15 @@ const ResponsiveSideNavbar = ({
           className="w-[18rem] h-full py-2   xl:hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] "
         >
           <div className="flex justify-center items-center py-3 text-3xl border-b-[1px] border-b-gray-300 ">
-            DubaiRentals
+            AnyRentals
           </div>
           <div className="mx-2 mt-6 xl:hidden">
             <p
               className=" mx-4 py-5 text-sm hover:text-orange-500 cursor-pointer flex"
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                setResponsiveSidebar({ left: false });
+              }}
             >
               <span>
                 <img
@@ -48,7 +51,10 @@ const ResponsiveSideNavbar = ({
             </p>
             <p
               className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-              onClick={() => navigate("/profile")}
+              onClick={() => {
+                navigate("/profile");
+                setResponsiveSidebar({ left: false });
+              }}
             >
               <span>
                 <img
@@ -61,7 +67,10 @@ const ResponsiveSideNavbar = ({
             </p>
             <p
               className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-              onClick={() => navigate("/blog")}
+              onClick={() => {
+                navigate("/blog");
+                setResponsiveSidebar({ left: false });
+              }}
             >
               <span>
                 <img
@@ -72,49 +81,58 @@ const ResponsiveSideNavbar = ({
               </span>
               <span className="ml-3">Add Blog</span>
             </p>
-            {/* {accountType !== "personal" ? ( */}
-            <>
-              <p
-                className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-                onClick={() => navigate("/add-service")}
-              >
-                <span>
-                  <img
-                    src={business}
-                    alt=""
-                    className="opacity-40 w-[1.3rem] h-[1.3rem]"
-                  />
-                </span>
-                <span className="ml-3">Add Service</span>
-              </p>
-              <p
-                className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-                onClick={() => navigate("/listings")}
-              >
-                <span>
-                  <img
-                    src={listing}
-                    alt=""
-                    className="opacity-40 w-[1.3rem] h-[1.3rem]"
-                  />
-                </span>
-                <span className="ml-3">Listings</span>
-              </p>
-              <p
-                className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-                onClick={() => navigate("/enquiries")}
-              >
-                <span>
-                  <img
-                    src={query}
-                    alt=""
-                    className="opacity-40 w-[1.3rem] h-[1.3rem]"
-                  />
-                </span>
-                <span className="ml-3">My Queries</span>
-              </p>
-            </>
-            {/* ) : null} */}
+            {accountType !== "personal" ? (
+              <>
+                <p
+                  className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+                  onClick={() => {
+                    navigate("/add-service");
+                    setResponsiveSidebar({ left: false });
+                  }}
+                >
+                  <span>
+                    <img
+                      src={business}
+                      alt=""
+                      className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                    />
+                  </span>
+                  <span className="ml-3">Add Service</span>
+                </p>
+                <p
+                  className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+                  onClick={() => {
+                    navigate("/listings");
+                    setResponsiveSidebar({ left: false });
+                  }}
+                >
+                  <span>
+                    <img
+                      src={listing}
+                      alt=""
+                      className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                    />
+                  </span>
+                  <span className="ml-3">Listings</span>
+                </p>
+                <p
+                  className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+                  onClick={() => {
+                    navigate("/enquiries");
+                    setResponsiveSidebar({ left: false });
+                  }}
+                >
+                  <span>
+                    <img
+                      src={query}
+                      alt=""
+                      className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                    />
+                  </span>
+                  <span className="ml-3">My Queries</span>
+                </p>
+              </>
+            ) : null}
             <p
               className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
               onClick={() => {

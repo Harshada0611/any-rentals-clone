@@ -54,19 +54,19 @@ function App() {
             path="/category-details/:categoryId/:categoryName"
             element={<CategoryServiceList />}
           ></Route>
-          {/* <Route
+          <Route
             path="/view-service-details/:serviceId"
             element={<ViewServiceDetails />}
-          ></Route> */}
+          ></Route>
         </Route>
 
         <Route element={<Dashboard />}>
           <Route path="/profile" element={<MyProfile />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
-          {/* <Route path="/add-service" element={<AddService />}></Route> */}
-          {/* <Route path="/listings" element={<Listings />}></Route> */}
+          <Route path="/add-service" element={<AddService />}></Route>
+          <Route path="/listings" element={<Listings />}></Route>
 
-          {/* <Route path="/enquiries" element={<Enquiries />}></Route> */}
+          <Route path="/enquiries" element={<Enquiries />}></Route>
         </Route>
       </Routes>
     </>

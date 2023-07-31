@@ -10,13 +10,13 @@ import query from "../../assets/faq.png";
 
 const SideNavbar = () => {
   const navigate = useNavigate();
-  // const accountType = localStorage.getItem("accountType");
+  const accountType = localStorage.getItem("accountType");
   const accountName = localStorage.getItem("accountName");
 
   return (
     <div className=" col-span-2 border-2 hidden lg:block pb-10">
       <div className="flex flex-col justify-center py-4 border-b-2">
-        <h1 className="text-3xl text-center">DubaiRentals</h1>
+        <h1 className="text-3xl text-center">AnyRentals</h1>
         <div className="text-gray-600 flex  justify-center items-center mt-4 ">
           <p className="">
             <BiSolidUser />
@@ -65,49 +65,49 @@ const SideNavbar = () => {
           </span>
           <span className="ml-3">Add Blog</span>
         </p>
-        {/* {accountType !== "personal" ? ( */}
-        <>
-          <p
-            className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-            onClick={() => navigate("/add-service")}
-          >
-            <span>
-              <img
-                src={business}
-                alt=""
-                className="opacity-40 w-[1.3rem] h-[1.3rem]"
-              />
-            </span>
-            <span className="ml-3">Add Service</span>
-          </p>
-          <p
-            className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-            onClick={() => navigate("/listings")}
-          >
-            <span>
-              <img
-                src={listing}
-                alt=""
-                className="opacity-40 w-[1.3rem] h-[1.3rem]"
-              />
-            </span>
-            <span className="ml-3">Listings</span>
-          </p>
-          <p
-            className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
-            onClick={() => navigate("/enquiries")}
-          >
-            <span>
-              <img
-                src={query}
-                alt=""
-                className="opacity-40 w-[1.3rem] h-[1.3rem]"
-              />
-            </span>
-            <span className="ml-3">My Queries</span>
-          </p>
-        </>
-        {/* ) : null} */}
+        {accountType !== "personal" ? (
+          <>
+            <p
+              className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+              onClick={() => navigate("/add-service")}
+            >
+              <span>
+                <img
+                  src={business}
+                  alt=""
+                  className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                />
+              </span>
+              <span className="ml-3">Add Service</span>
+            </p>
+            <p
+              className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+              onClick={() => navigate("/listings")}
+            >
+              <span>
+                <img
+                  src={listing}
+                  alt=""
+                  className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                />
+              </span>
+              <span className="ml-3">Listings</span>
+            </p>
+            <p
+              className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
+              onClick={() => navigate("/enquiries")}
+            >
+              <span>
+                <img
+                  src={query}
+                  alt=""
+                  className="opacity-40 w-[1.3rem] h-[1.3rem]"
+                />
+              </span>
+              <span className="ml-3">My Queries</span>
+            </p>
+          </>
+        ) : null}
         <p
           className=" mx-4 py-5 text-sm  hover:text-orange-500 cursor-pointer flex"
           onClick={() => {
