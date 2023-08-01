@@ -50,7 +50,7 @@ const AddBusinessRegistrationForm = ({ setLogin }) => {
   };
 
   return (
-    <div className="h-[55rem] relative  mt-10 ">
+    <div className="h-[55rem] relative  mt-18 ">
       <div className=" bg-[rgba(255,255,255)] w-[90%] md:w-[60%] lg:w-[55%] lg:h-[65%] px-8  absolute left-[5%] md:left-[23%] top-[8%] ">
         <div className="p-4  text-center text-stone-600 border-b-2">
           <h1 className="text-2xl">SIGN UP</h1>
@@ -79,19 +79,7 @@ const AddBusinessRegistrationForm = ({ setLogin }) => {
                 className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border border-gray-400-blue-500"
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="password" className="block font-medium">
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={inputData.password}
-                onChange={handleInput}
-                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border border-gray-400-blue-500"
-              />
-            </div>
+
             <div className="mb-4">
               <label htmlFor="telephone" className="block font-medium">
                 Contact Number
@@ -105,8 +93,6 @@ const AddBusinessRegistrationForm = ({ setLogin }) => {
                 className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border border-gray-400-blue-500"
               />
             </div>
-          </div>
-          <div className="flex-1 space-y-8 md:space-y-10">
             <div className="mb-4">
               <label htmlFor="email" className="block font-medium">
                 Email
@@ -116,6 +102,21 @@ const AddBusinessRegistrationForm = ({ setLogin }) => {
                 id="email"
                 name="email"
                 value={inputData.email}
+                onChange={handleInput}
+                className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border border-gray-400-blue-500"
+              />
+            </div>
+          </div>
+          <div className="flex-1 space-y-8 md:space-y-10">
+            <div className="mb-4">
+              <label htmlFor="password" className="block font-medium">
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={inputData.password}
                 onChange={handleInput}
                 className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:border border-gray-400-blue-500"
               />
