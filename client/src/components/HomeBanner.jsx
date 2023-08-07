@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import LinearProgress from "@mui/material/LinearProgress";
 
 const imgArr = [
-  "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?cs=srgb&dl=pexels-pixabay-276724.jpg&fm=jpg",
-  "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571460.jpg&fm=jpg",
-  "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
+ "https://media.architecturaldigest.com/photos/5f3bc30ba195222631e5d35b/16:9/w_2560%2Cc_limit/GettyImages-1151868130.jpg",
+  "https://images7.alphacoders.com/110/thumb-1920-1108495.png",
+  "https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 ];
 
 const LinearProgressBar = ({ fillPercentage }) => {
